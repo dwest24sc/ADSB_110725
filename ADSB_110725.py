@@ -24,15 +24,15 @@ matplotlib.use('Qt5Agg')
 
 # 1. Receiver Location (Latitude, Longitude)
 # Used to center the map and calculate distance.
-RECEIVER_LAT = XX.XXXX
-RECEIVER_LON = -XX.XXXX
+RECEIVER_LAT = 37.9555
+RECEIVER_LON = -121.6978
 
 
 
 
 # 2. Raspberry Pi IP Address
 # The local IP address of your Pi running dump1090.
-PI_IP_ADDRESS = "XXX.XXX.X.XXX"  # <-- CHANGE THIS
+PI_IP_ADDRESS = "192.168.4.93"  # <-- CHANGE THIS
 # (You can often find this on your router's admin page)
 
 # 3. dump1090 Data URL
@@ -72,8 +72,8 @@ PLOT_AIRPORTS = 1
 
 # --- Constants ---
 # Center of the DC SFRA/FRZ
-DCA_VOR_LAT = 38.859444
-DCA_VOR_LON = -77.036389
+DCA_VOR_LAT = 37.6189
+DCA_VOR_LON = -122.3750
 SFRA_RADIUS_METERS = 55560 # 30 NM
 FRZ_RADIUS_METERS = 27780  # 15 NM
 
@@ -172,7 +172,7 @@ class AdsbTracker(QMainWindow):
             base_url = "https://raw.githubusercontent.com/glynnbird/usstatesgeojson/master/"
             
             # List of files to fetch
-            state_files = ["virginia.geojson", "maryland.geojson"]
+            state_files = ["california.geojson", "nevada.geojson"]
             
             combined_features = []
             
